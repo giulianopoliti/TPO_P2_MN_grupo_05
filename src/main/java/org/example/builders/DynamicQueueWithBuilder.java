@@ -4,7 +4,7 @@ import org.example.tdas.Node;
 
 import java.util.Objects;
 
-public class DynamicQueueWithBuilder {
+public class DynamicQueueWithBuilder { // ejercicio 4 hecho por Giuliano Politi
 
     private Node first;
     public DynamicQueueWithBuilder(int ... values) {

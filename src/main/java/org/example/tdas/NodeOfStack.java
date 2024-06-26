@@ -1,6 +1,6 @@
 package org.example.tdas;
 
-public class NodeOfStack {
+public class NodeOfStack { // Hecho por Giuliano Politi
 
     private IStack first;
 

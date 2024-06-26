@@ -1,6 +1,6 @@
 package org.example.tdas;
 
-public class DoubleLinkedNode {
+public class DoubleLinkedNode { // Hecho por Giuliano Politi
 
 
     private int value;

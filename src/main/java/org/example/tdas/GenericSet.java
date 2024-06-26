@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class GenericSet<T> implements IGenericSet<T> {
+public class GenericSet<T> implements IGenericSet<T> { // Hecho por Simon Ottati
     private static final int MAX = 10000;
     private List<T> array = new ArrayList(10000);
     private int count = 0;

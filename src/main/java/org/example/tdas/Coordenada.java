@@ -1,6 +1,6 @@
 package org.example.tdas;
 
-public class Coordenada {
+public class Coordenada { // Hecho por Simon Ottati
     private double x;
     private double y;
 

@@ -3,7 +3,7 @@ package org.example.tdas;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Montecarlo {
+public class Montecarlo { // Hecho por Simon Ottati
     private List<Coordenada> coordenadas = new ArrayList();
     private Region region;
 

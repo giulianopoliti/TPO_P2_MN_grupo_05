@@ -4,7 +4,7 @@ package org.example.tdas;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenericStack<T> implements IGenericStack<T> {
+public class GenericStack<T> implements IGenericStack<T> { // Hecho por Simon Ottati
     private static final int MAX = 10000;
     private final List<T> array = new ArrayList(10000);
     private int count = 0;

@@ -1,6 +1,6 @@
 package org.example.tdas;
 
-public class GenericNode <T> {
+public class GenericNode <T> { // Hecho por Simon Ottati
     private T value;
     private GenericNode<T> next;
 

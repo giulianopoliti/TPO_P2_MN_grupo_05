@@ -1,6 +1,6 @@
 package org.example.tdas;
 
-public class DynamicQueueOfStacks implements IQueueOfStacks {
+public class DynamicQueueOfStacks implements IQueueOfStacks { // Hecho por Giuliano Politi
     private final int numElementsOfStack;
     private int numElementsMax;
     private int count;

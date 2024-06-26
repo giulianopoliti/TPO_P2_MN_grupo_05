@@ -3,7 +3,7 @@ package org.example.tdas;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenericQueue<T> implements IGenericQueue<T> {
+public class GenericQueue<T> implements IGenericQueue<T> { // Hecho por Simon Ottati
     private static final int MAX = 10000;
     private final List<T> array = new ArrayList(10000);
     private int count = 0;

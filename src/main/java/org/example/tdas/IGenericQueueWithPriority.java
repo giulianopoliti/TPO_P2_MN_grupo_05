@@ -1,6 +1,6 @@
 package org.example.tdas;
 
-public interface IGenericQueueWithPriority<T> {
+public interface IGenericQueueWithPriority<T> { // Hecho por Simon Ottati
     void add(T var1, int var2);
 
     void remove();

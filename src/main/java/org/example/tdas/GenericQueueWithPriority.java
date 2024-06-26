@@ -4,7 +4,7 @@ package org.example.tdas;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenericQueueWithPriority<T> implements IGenericQueueWithPriority<T> {
+public class GenericQueueWithPriority<T> implements IGenericQueueWithPriority<T> { // Hecho por Simon Ottati
     private static final int LENGHT = 10000;
     private final List<T> array = new ArrayList(10000);
     private final int[] priorities = new int[10000];

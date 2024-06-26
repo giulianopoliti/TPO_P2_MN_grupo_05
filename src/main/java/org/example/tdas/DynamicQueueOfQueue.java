@@ -2,7 +2,7 @@ package org.example.tdas;
 
 import java.util.Objects;
 
-public class DynamicQueueOfQueue implements IQueueOfQueue {
+public class DynamicQueueOfQueue implements IQueueOfQueue { // Hecho por Simon Ottati
     private GenericNode<DynamicQueue> first;
 
     public DynamicQueueOfQueue() {

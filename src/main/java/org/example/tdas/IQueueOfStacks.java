@@ -1,6 +1,6 @@
 package org.example.tdas;
 
-public interface IQueueOfStacks {
+public interface IQueueOfStacks { // Hecho por Giuliano Politi
     void add(int a);
 
     void remove();

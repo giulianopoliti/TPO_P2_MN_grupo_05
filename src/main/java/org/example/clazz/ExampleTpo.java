@@ -8,7 +8,7 @@ import java.util.*;
 
 public class ExampleTpo {
 
-    public static int calcularTraza (IQueueOfStacks queue) { // Ejercicio matrices. 2.1 Hecho por Giuliano Politi
+    public static int calcularTraza (IQueueOfStacks queue) { // Ejercicio matrices. 2.1.1 Hecho por Giuliano Politi
         IQueueOfStacks copy = ExampleTpo.copyQueueOfStack(queue);
         int traza = 0; // O(c)
         int index = copy.getNumElementsOfStack(); // O(N)
@@ -23,7 +23,7 @@ public class ExampleTpo {
         }
         return traza;
     } // complejidad computacional: O(N**2) + O(N).
-    public static IQueueOfStacks traspuestaOfQueueOfStacks(IQueueOfStacks queue) { // Ejercicio matrices. 2.2 Hecho por Giuliano Politi
+    public static IQueueOfStacks traspuestaOfQueueOfStacks(IQueueOfStacks queue) { // Ejercicio matrices. 2.1.2 Hecho por Giuliano Politi
         IQueueOfStacks copy = ExampleTpo.copyQueueOfStack(queue); //O(n)
         IQueueOfStacks traspuesta = new DynamicQueueOfStacks(queue.getNumElementsOfStack()); //O(c)
         int numElements = queue.getNumElementsOfStack();//O(c)
@@ -54,7 +54,7 @@ public class ExampleTpo {
 
         return traspuesta;
     } // Complejidad computacional: //O(n) + O(n) + O(n) + O(n) = O(4n) lineal
-    public static IQueueOfStacks sumaOfQueueOfStacks (IQueueOfStacks q1, IQueueOfStacks q2) { // Ejercicio matrices. 2.3 Hecho por Giuliano Politi
+    public static IQueueOfStacks sumaOfQueueOfStacks (IQueueOfStacks q1, IQueueOfStacks q2) { // Ejercicio matrices. 2.1.3 Hecho por Giuliano Politi
         if (q1.getNumElementsOfStack() != q2.getNumElementsOfStack()) {
             throw new RuntimeException("Las matrices tienen que ser del mismo tamaño.");
         }
@@ -123,7 +123,7 @@ public class ExampleTpo {
         return desplazamiento;
     } // complejidad computacional: O(2N)
 
-    public static String descifrarMensaje(String string) {
+    public static String descifrarMensaje(String string) { // ejercicio 5.2 hecho por Giuliano Politi
         String mensaje = "";
         int desplazamiento = ExampleTpo.calcularDesplazamiento(string); // O(2N)
         final int LONGITUD_ALFABETO = 26, INICIO_MINUSCULAS = 97, INICIO_MAYUSCULAS = 65;
@@ -149,6 +149,7 @@ public class ExampleTpo {
     // funciona para todo, pero toma la m como l, la n como m, y no esta incluida la ñ, fue la unica forma que pude
 
     public static HashMap<Character, Integer> generateDictionaryOfAlphabet (){ // O(C)= lineal
+        // ejercicio 5.2 hecho por Giuliano Politi
         HashMap<Character, Integer> hashMap = new HashMap<>(); // O(C)
         for (char c = 'a'; c <= 'n'; c++) { // Lleno el diccionario con las letras del alfabeto y valores asociados por ASCII
             hashMap.put(c, 0);  // Ejemplo: Valor a, Valor b, ... // O(C)
@@ -204,7 +205,7 @@ public class ExampleTpo {
         return copy;
     }
 
-    public static <T> GenericStack<T> copysStackGenrico(GenericStack<T> stack) {
+    public static <T> GenericStack<T> copysStackGenrico(GenericStack<T> stack) { // Hecho por Simon Ottati
         GenericStack<T> copy = new GenericStack();
         GenericStack<T> copy2 = new GenericStack();
 
@@ -240,7 +241,7 @@ public class ExampleTpo {
         return set;
     }
 
-    public static <T> GenericStack<T> invertirStackGenerico(GenericStack<T> stack) {
+    public static <T> GenericStack<T> invertirStackGenerico(GenericStack<T> stack) { // Hecho por Simon Ottati
         GenericStack<T> aux = copysStackGenrico(stack);
         GenericStack<T> invertido = new GenericStack();
 
@@ -252,7 +253,7 @@ public class ExampleTpo {
         return invertido;
     }
 
-    public static <T> GenericSet<T> copiarSetGenerico(GenericSet<T> set) {
+    public static <T> GenericSet<T> copiarSetGenerico(GenericSet<T> set) { // Hecho por Simon Ottati
         GenericSet<T> copy = new GenericSet();
         GenericSet<T> copy2 = new GenericSet();
 
@@ -279,7 +280,7 @@ public class ExampleTpo {
         return copy;
     }
 
-    public static List<Coordenada> generarCoordenadas(double maxX, double maxY) {
+    public static List<Coordenada> generarCoordenadas(double maxX, double maxY) { // Hecho por Simon Ottati
         List<Coordenada> coordenadas = new ArrayList();
         Random rand = new Random();
 
@@ -292,7 +293,7 @@ public class ExampleTpo {
         return coordenadas;
     }
 
-    public static double aproximarPi(Montecarlo montecarlo) {
+    public static double aproximarPi(Montecarlo montecarlo) { // Hecho por Simon Ottati
         int numPuntos = montecarlo.getCantidadDePuntos();
         Random rand = new Random();
         int puntosDentroCirculo = 0;

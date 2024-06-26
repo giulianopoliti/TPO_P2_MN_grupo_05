@@ -4,7 +4,7 @@ import org.example.tdas.Node;
 
 import java.util.Objects;
 
-public class DynamicStackWithBuilder {
+public class DynamicStackWithBuilder { // ejercicio 4 hecho por Giuliano Politi
     private Node first;
 
     public DynamicStackWithBuilder add(int a) {

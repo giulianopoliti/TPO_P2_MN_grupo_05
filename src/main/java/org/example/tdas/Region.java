@@ -1,6 +1,6 @@
 package org.example.tdas;
 
-public class Region {
+public class Region { // Hecho por Simon Ottati
     private double lado;
 
     public Region(double lado) {
